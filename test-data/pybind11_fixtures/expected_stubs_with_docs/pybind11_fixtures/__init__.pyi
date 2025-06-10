@@ -1,5 +1,6 @@
 import pathlib
 import typing
+from . import demo as demo
 from typing import overload
 
 class StaticMethods:
