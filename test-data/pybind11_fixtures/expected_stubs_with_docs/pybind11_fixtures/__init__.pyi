@@ -14,7 +14,7 @@ class StaticMethods:
 
         1. overloaded_static_method(value: typing.SupportsInt) -> int
 
-        2. overloaded_static_method(value: float) -> float
+        2. overloaded_static_method(value: typing.SupportsFloat) -> float
         """
     @overload
     @staticmethod
@@ -22,7 +22,7 @@ class StaticMethods:
         """overloaded_static_method(*args, **kwargs)
         Overloaded function.
 
-        1. overloaded_static_method(value: int) -> int
+        1. overloaded_static_method(value: typing.SupportsInt) -> int
 
         2. overloaded_static_method(value: typing.SupportsFloat) -> float
         """
@@ -53,4 +53,4 @@ def func_returning_pair() -> tuple[int, float]:
 def func_returning_path() -> os.PathLike:
     """func_returning_path() -> os.PathLike"""
 def func_returning_vector() -> list[float]:
-    """func_returning_vector() -> List[float]"""
+    """func_returning_vector() -> list[float]"""
