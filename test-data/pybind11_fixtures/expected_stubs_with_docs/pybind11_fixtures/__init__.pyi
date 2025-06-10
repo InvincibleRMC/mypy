@@ -1,5 +1,4 @@
-import os
-from . import demo as demo
+import pathlib
 import typing
 from typing import overload
 
@@ -50,7 +49,7 @@ def func_returning_optional() -> int | None:
     """func_returning_optional() -> int | None"""
 def func_returning_pair() -> tuple[int, float]:
     """func_returning_pair() -> tuple[int, float]"""
-def func_returning_path() -> os.PathLike:
-    """func_returning_path() -> os.PathLike"""
+def func_returning_path() -> pathlib.Path:
+    """func_returning_path() -> pathlib.Path"""
 def func_returning_vector() -> list[float]:
     """func_returning_vector() -> list[float]"""

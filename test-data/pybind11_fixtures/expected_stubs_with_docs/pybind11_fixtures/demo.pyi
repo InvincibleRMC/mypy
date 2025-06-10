@@ -85,7 +85,7 @@ class Point:
 
         1. __init__(self: pybind11_fixtures.demo.Point) -> None
 
-        2. __init__(self: pybind11_fixtures.demo.Point, x: float, y: float) -> None
+        2. __init__(self: pybind11_fixtures.demo.Point, x: typing.SupportsFloat, y: typing.SupportsFloat) -> None
         """
     @overload
     def __init__(self, x: typing.SupportsFloat, y: typing.SupportsFloat) -> None:
@@ -125,8 +125,8 @@ def answer() -> int:
 
     answer docstring, with end quote"
     '''
-def midpoint(left: float, right: float) -> float:
-    """midpoint(left: float, right: float) -> float"""
+def midpoint(left: typing.SupportsFloat, right: typing.SupportsFloat) -> float:
+    """midpoint(left: typing.SupportsFloat, right: typing.SupportsFloat) -> float"""
 def sum(arg0: typing.SupportsInt, arg1: typing.SupportsInt) -> int:
     '''sum(arg0: typing.SupportsInt, arg1: typing.SupportsInt) -> int
 
