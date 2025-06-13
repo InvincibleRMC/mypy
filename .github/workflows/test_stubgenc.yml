@@ -12,6 +12,7 @@ on:
     - 'mypy/stubdoc.py'
     - 'mypy/stubutil.py'
     - 'test-data/stubgen/**'
+    - 'test-data/pybind11_fixtures/**'
 
 permissions:
   contents: read
